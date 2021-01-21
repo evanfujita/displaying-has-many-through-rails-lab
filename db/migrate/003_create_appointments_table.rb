@@ -1,0 +1,10 @@
+class CreateAppointmentsTable < ActiveRecord::Migration
+
+    def change
+        create_table :appointments do |t|
+            t.string :appointment_datetime
+            t.integer :doctor_id
+            t.integer :patient_id
+        end
+    end
+end
